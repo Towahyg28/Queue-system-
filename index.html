@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>
+    QueueTime
+  </title>
+
+
+  <!-- CSS -->
+  <link rel="stylesheet"
+        href="style.css">
+
+
+  <!-- Html5Qrcode -->
+  <script
+    src="https://unpkg.com/html5-qrcode"
+    type="text/javascript">
+  </script>
+
+</head>
+
+
+<body>
+
+
+  <main class="container">
+
+
+    <h1>
+      QueueTime
+    </h1>
+
+
+    <p class="description">
+      QRコードを読み取ってください
+    </p>
+
+
+
+    <!-- QRカメラ領域 -->
+
+    <div id="qr-reader">
+
+    </div>
+
+
+
+    <!-- 状態表示 -->
+
+    <div id="message"
+         class="message"
+         aria-live="polite">
+
+      待機中
+
+    </div>
+
+
+    <!-- 通信情報 -->
+
+<div class="debug-area">
+
+  <h2>
+    通信情報
+  </h2>
+
+  <p>
+
+    HTTP Status：
+
+    <span id="http-status">
+
+      -
+
+    </span>
+
+  </p>
+
+  <p>
+
+    Fetch：
+
+    <span id="fetch-status">
+
+      -
+
+    </span>
+
+  </p>
+
+</div>
+
+
+
+<!-- レスポンス -->
+
+<div class="debug-area">
+
+  <h2>
+    Response
+  </h2>
+
+  <pre id="response-body">
+
+-
+
+  </pre>
+
+</div>
+
+
+
+<!-- デバッグログ -->
+
+<div class="debug-area">
+
+  <h2>
+    Debug Log
+  </h2>
+
+  <pre id="debug-log">
+
+-
+
+  </pre>
+
+</div>
+
+
+
+    <!-- 手動入力 -->
+
+    <div class="manual">
+
+      <input
+        id="qr-input"
+        type="text"
+        placeholder="QR番号入力">
+
+
+      <button
+        id="start-button">
+
+        利用開始
+
+      </button>
+
+
+      <button
+        id="end-button">
+
+        利用終了
+
+      </button>
+
+    </div>
+
+
+
+    <!-- 待ち時間表示 -->
+
+    <div class="wait-time">
+
+      <h2>
+        現在の待ち時間
+      </h2>
+
+
+      <p id="wait-time-value">
+
+        -- 分
+
+      </p>
+
+    </div>
+
+
+  </main>
+
+
+
+  <!-- JavaScript -->
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
