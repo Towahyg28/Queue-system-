@@ -25,7 +25,7 @@
 const API = Object.freeze({
 
   URL:
-    "https://script.google.com/macros/s/AKfycbyKPM0ocomU31cCpYMl_KlsDgrl8_ryxxcqfIVDPG0dSdCFIARXBf1McnEW_mN1Mv8xOg/exec",
+    "https://script.google.com/macros/s/AKfycbzVWN0MIi6j26fHXqLhZGh5f1PFkt1nWk5MN1U44f_z3sjFB2aZ8pIjoA5eKLcyDzDgLA/exec",
 
   CONTENT_TYPE:
     "application/json",
